@@ -22,7 +22,7 @@ Gerenciador de dependências do PHP. Por padrão as bibliotecas são procuradas 
 * ``composer.json`` informações sobre o projeto/lib, incluindo scripts e dependências
 
 ## Autoload
-Adicionar no composer.json para mapear o namespace src 
+Adicionar no ``composer.json`` para mapear o namespace da pasta ``src`` o seguinte trecho:
 ```json
 "autoload": {
   "psr-4": {
@@ -30,7 +30,22 @@ Adicionar no composer.json para mapear o namespace src
   }
 }
 ```
-* Sempre que atualizar autoload em ``composer.json`` é necessário executar ``composer dump`` para atualizar o vendor.
+* Sempre que atualizar autoload em ``composer.json`` é necessário executar ``composer dump`` para atualizar o vendor
+
+## Instalar pacotes a partir do github/gitlab etc
+Adicionar no ``composer.json`` para especificar as dependências o seguinte trecho:
+```json
+"repositories": [
+  {
+    "type": "vcs",
+    "url": "git@github.com:user/repo.git"
+  }
+]
+```
+* Utilizar ``composer install`` para instalar todas dependências
+
+## Distribuição de pacotes no packagist
+É possível conectar repositórios ao packagist gratuitamente para criar biliotecas disponíveis online. A lib é atualizada automaticamente através de hooks do github.
 
 
 ## Observações
