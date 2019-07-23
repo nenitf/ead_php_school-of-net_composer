@@ -21,6 +21,18 @@ Gerenciador de dependências do PHP. Por padrão as bibliotecas são procuradas 
 * ``composer.lock`` resolução das dependências (gerado dinâmicamente)
 * ``composer.json`` informações sobre o projeto/lib, incluindo scripts e dependências
 
+## Autoload
+Adicionar no composer.json para mapear o namespace src 
+```json
+"autoload": {
+  "psr-4": {
+    "src\\": "src"
+  }
+}
+```
+* Sempre que atualizar autoload em ``composer.json`` é necessário executar ``composer dump`` para atualizar o vendor.
+
+
 ## Observações
 * Para utilizar no projeto as dependências, ver arquivo ``bootstrap.php``, sugerido pelo professor
 
