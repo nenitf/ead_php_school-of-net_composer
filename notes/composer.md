@@ -47,7 +47,6 @@ Adicionar no ``composer.json`` para especificar as dependências o seguinte trec
 ## Distribuição de pacotes no packagist
 É possível conectar repositórios ao packagist gratuitamente para criar biliotecas disponíveis online. A lib é atualizada automaticamente através de hooks do github.
 
-
 ## Observações
-* Para utilizar no projeto as dependências, ver arquivo ``bootstrap.php``, sugerido pelo professor
+* Para utilizar no projeto as dependências, ver arquivo ``app/bootstrap.php``, sugerido pelo professor
 
