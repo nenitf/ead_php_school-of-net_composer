@@ -1,0 +1,14 @@
+{
+    "name": "neni/ead-son-composer",
+    "type": "project",
+    "require": {
+        "phpunit/phpunit": "^8.2"
+    },
+    "license": "UNLICENSE",
+    "authors": [
+        {
+            "name": "Felipe Silva",
+            "email": "felipe.dacs@gmail.com"
+        }
+    ]
+}
