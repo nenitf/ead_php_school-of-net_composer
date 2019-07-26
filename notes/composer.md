@@ -12,6 +12,7 @@ Gerenciador de dependências do PHP. Por padrão as bibliotecas são procuradas 
 * ``self-update`` atualiza composer
 * ``init`` cli para criar composer.json
     * Lembrar de colocar no .gitignore a pasta ``vendor`` e o arquivo ``composer.lock``
+* ``init -n`` cria composer.json direto
 * ``install`` instala dependências listadas em ``composer.json`` (require e require-dev)
 * ``require <vendor>/<name>`` instala dependência no packagist
 * ``remove <vendor>/<name>`` remove dependência instalada.
