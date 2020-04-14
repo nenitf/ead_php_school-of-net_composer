@@ -16,6 +16,7 @@ Gerenciador de dependências do PHP. Por padrão as bibliotecas são procuradas 
 * ``install`` instala dependências listadas em ``composer.json`` (require e require-dev)
 * ``require <vendor>/<name>`` instala dependência no packagist
 * ``remove <vendor>/<name>`` remove dependência instalada.
+* ``composer du`` e ``composer du -o`` [recarrega namespaces](https://getcomposer.org/doc/03-cli.md#dump-autoload-dumpautoload-)
 
 ## Arquivos/Pasta
 * ``vendor/`` guarda dependências instaladas (gerado dinâmicamente)
